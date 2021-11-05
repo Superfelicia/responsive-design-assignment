@@ -1,2 +1,49 @@
 /* grid= 10x10fr */
 
+/* mobile width = 320px
+tablet width = 768px
+desktop width = 1440px */
+
+
+/* Mobile */
+body {
+    background-color: blueviolet;
+}
+
+.links {
+    display: none;
+}
+
+.dots {
+    display: block;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .links {
+        display: block;
+    }
+
+    .dots {
+        display: none;
+    }
+    
+    body {
+        background-color: red;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+    .links {
+        display: block;
+    }
+
+    .dots {
+        display: none;
+    }
+    
+    body {
+        background-color: blue;
+    }
+}
